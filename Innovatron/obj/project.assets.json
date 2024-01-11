@@ -87,55 +87,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.WindowsDesktop.App.Ref\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.WindowsDesktop.App.Ref'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.WindowsDesktop.App.Ref"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.NETCore.App.Host.win-x64\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.NETCore.App.Host.win-x64'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.NETCore.App.Host.win-x64"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.NETCore.App.Ref\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.NETCore.App.Ref'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.NETCore.App.Ref"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.AspNetCore.App.Ref\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.AspNetCore.App.Ref'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.AspNetCore.App.Ref"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.NETCore.App.Ref\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.NETCore.App.Ref'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.NETCore.App.Ref"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.NETCore.App.Host.win-x64\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.NETCore.App.Host.win-x64'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.NETCore.App.Host.win-x64"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.WindowsDesktop.App.Ref\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.WindowsDesktop.App.Ref'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.WindowsDesktop.App.Ref"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Fehler beim Abrufen von Informationen zu \"Microsoft.AspNetCore.App.Ref\" aus der Remotequelle \"https://packagesource/FindPackagesById()?id='Microsoft.AspNetCore.App.Ref'&semVerLevel=2.0.0\".",
-      "libraryId": "Microsoft.AspNetCore.App.Ref"
-    }
-  ]
+  }
 }
