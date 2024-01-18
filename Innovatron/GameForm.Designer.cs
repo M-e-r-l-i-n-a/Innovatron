@@ -28,32 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            goBackBtn = new Button();
             SuspendLayout();
-            // 
-            // goBackBtn
-            // 
-            goBackBtn.Location = new Point(12, 12);
-            goBackBtn.Name = "goBackBtn";
-            goBackBtn.Size = new Size(165, 29);
-            goBackBtn.TabIndex = 0;
-            goBackBtn.Text = "Go back to the Menu";
-            goBackBtn.UseVisualStyleBackColor = true;
-            goBackBtn.Click += goBackBtn_Click;
             // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(goBackBtn);
             Name = "GameForm";
             Text = "GameForm";
+            FormClosed += GameForm_FormClosed;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button goBackBtn;
     }
 }

@@ -17,11 +17,10 @@ namespace Innovatron
             InitializeComponent();
         }
 
-        private void goBackBtn_Click(object sender, EventArgs e)
+        private void GameForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
-            MainForm formMain = new MainForm();
-            formMain.Show();
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
         }
     }
 }

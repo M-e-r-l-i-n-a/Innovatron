@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Innovatron")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd9fd9e7d5933614a450f087dfbf8dee11359a21")]
 [assembly: System.Reflection.AssemblyProductAttribute("Innovatron")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Innovatron")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
