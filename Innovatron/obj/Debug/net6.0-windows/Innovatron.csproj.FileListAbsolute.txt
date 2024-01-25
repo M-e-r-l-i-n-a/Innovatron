@@ -15,3 +15,21 @@ C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Deb
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.pdb
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.genruntimeconfig.cache
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\ref\Innovatron.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.exe
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.deps.json
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.runtimeconfig.json
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.pdb
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.GameForm.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.MainForm.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.csproj.GenerateResource.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.AssemblyInfoInputs.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.AssemblyInfo.cs
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.csproj.CoreCompileInputs.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.sourcelink.json
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\refint\Innovatron.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.pdb
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.genruntimeconfig.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\ref\Innovatron.dll

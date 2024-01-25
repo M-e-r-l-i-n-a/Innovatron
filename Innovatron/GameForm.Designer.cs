@@ -28,19 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            moveTimer = new System.Windows.Forms.Timer(components);
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // moveTimer
+            // 
+            moveTimer.Enabled = true;
+            moveTimer.Interval = 20;
+            moveTimer.Tick += moveTimerEvent;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ActiveCaption;
+            pictureBox1.Location = new Point(457, 269);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(75, 75);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // GameForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
+            Controls.Add(pictureBox1);
+            Margin = new Padding(4);
             Name = "GameForm";
             Text = "GameForm";
             FormClosed += GameForm_FormClosed;
+            KeyDown += KeyIsDown;
+            KeyUp += KeyIsUp;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer moveTimer;
+        private PictureBox pictureBox1;
     }
 }
