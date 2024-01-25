@@ -4,31 +4,47 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Innovatron
 {
-    public partial class GameForm : Form
+    public partial class GameForm_Room1 : Form
     {
         bool moveLeft, moveRight;
         int speed = 12;
+        bool gotKey;
 
-        public GameForm()
+        public GameForm_Room1()
         {
             InitializeComponent();
         }
-        
+
         private void moveTimerEvent(object sender, EventArgs e)
         {
-            if (moveLeft && pictureBox1.Left > 0)
+            if (moveLeft && roboter.Left > 0)
             {
-                pictureBox1.Left -= speed;
+                roboter.Left -= speed;
             }
-            if (moveRight && pictureBox1.Left < 922)
+            if (moveRight && roboter.Left < 922)
             {
-                pictureBox1.Left += speed;
+                roboter.Left += speed;
+            }
+            if (key.Bounds.IntersectsWith(roboter.Bounds))
+            {
+                gotKey = true;
+                key.Visible = false;
+            }
+            if (door.Bounds.IntersectsWith(roboter.Bounds) && gotKey)
+            {
+                GameForm_Room2 newRoom = new GameForm_Room2();
+                this.Hide();
+                moveTimer.Stop();
+                gotKey = false;
+                newRoom.Show();
             }
         }
 
@@ -60,6 +76,21 @@ namespace Innovatron
             {
                 moveRight = false;
             }
+        }
+
+        private void roboter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GameForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void key_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

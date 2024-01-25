@@ -78,6 +78,7 @@
             Controls.Add(newGameBtn);
             Name = "MainForm";
             Text = "MainForm";
+            FormClosed += MainForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
