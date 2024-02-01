@@ -23,5 +23,10 @@ namespace Innovatron
             GameForm gameForm = new GameForm();
             gameForm.Show();
         }
+
+        private void onFormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

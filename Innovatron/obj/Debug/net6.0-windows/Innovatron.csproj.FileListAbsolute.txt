@@ -33,3 +33,4 @@ C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.pdb
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.genruntimeconfig.cache
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\ref\Innovatron.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.Properties.Resources.resources
