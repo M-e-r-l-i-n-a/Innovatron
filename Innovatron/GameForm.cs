@@ -15,9 +15,10 @@ namespace Innovatron
     {
         bool moveLeft, moveRight;
         int speed = 12;
-        string interactionObjekt = "";
+        PictureBox interactionObjekt;
         Bitmap moveLeftPicture = new("..\\..\\..\\pictures\\moveLeft.png");
         Bitmap moveRightPicture = new("..\\..\\..\\pictures\\moveRight.png");
+        string selectedAction;
 
         public GameForm()
         {
@@ -47,13 +48,16 @@ namespace Innovatron
                     player.Image = moveRightPicture;
                 }
             }
-            if (!key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt == "key")
+            if (interactionObjekt != null)
             {
-                interactionObjekt = "";
+                if (!player.Bounds.IntersectsWith(interactionObjekt.Bounds))
+                {
+                    interactionObjekt = null;
+                }
             }
         }
 
-        private void showActions(string _interactionObject)
+        private void showActions(PictureBox _interactionObject)
         {
             interactionObjekt = _interactionObject;
             ActionsList.Visible = true;
@@ -81,9 +85,9 @@ namespace Innovatron
             }
             if (e.KeyCode == Keys.Space)
             {
-                if (key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt != "key")
+                if (key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt != key)
                 {
-                    showActions("key");
+                    showActions(key);
                 }
             }
         }
@@ -118,13 +122,37 @@ namespace Innovatron
             ActionsList.Visible = false;
             button1.Visible = false;
             label1.Visible = false;
-            string selectedAction = (string)ActionsList.SelectedItem;
-            if (interactionObjekt == "key" && selectedAction == "take")
+            selectedAction = (string)ActionsList.SelectedItem;
+
+            ActionObject(key, "take", "open");
+            //Door(door1, room2);
+        }
+
+        private void ActionObject(PictureBox objekt, string requiredAction, string getAction)
+        {
+            if (interactionObjekt == objekt && selectedAction == requiredAction)
             {
-                ActionsList.Items.Add("open");
+                ActionsList.Items.Add(getAction);
                 key.Left = -100;
             }
             this.Focus();
+        }
+
+        private void InformationObject(PictureBox objekt)
+        {
+            if (interactionObjekt == objekt && selectedAction == "read")
+            {
+                
+            }
+        }
+
+        private void Door(PictureBox objekt, Form nextForm)
+        {
+            if (interactionObjekt == objekt && selectedAction == "open")
+            {
+                this.Hide();
+                nextForm.Show();
+            }
         }
     }
 }
