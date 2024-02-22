@@ -16,8 +16,8 @@ namespace Innovatron
         bool moveLeft, moveRight;
         int speed = 12;
         string interactionObjekt = "";
-        Bitmap moveLeftPicture = new("pictures\\moveLeft.png");
-        Bitmap moveRightPicture = new("pictures\\moveRight.png");
+        Bitmap moveLeftPicture = new("..\\..\\..\\pictures\\moveLeft.png");
+        Bitmap moveRightPicture = new("..\\..\\..\\pictures\\moveRight.png");
 
         public GameForm()
         {
