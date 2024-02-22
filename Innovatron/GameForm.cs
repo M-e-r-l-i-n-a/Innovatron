@@ -126,5 +126,11 @@ namespace Innovatron
             }
             this.Focus();
         }
+
+        private void helpbutton_Click(object sender, EventArgs e)
+        {
+            GetHelpForm getHelpForm = new GetHelpForm();
+            getHelpForm.ShowDialog();
+        }
     }
 }
