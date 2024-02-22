@@ -16,6 +16,8 @@ namespace Innovatron
         bool moveLeft, moveRight;
         int speed = 12;
         string interactionObjekt = "";
+        Bitmap moveLeftPicture = new("pictures\\moveLeft.png");
+        Bitmap moveRightPicture = new("pictures\\moveRight.png");
 
         public GameForm()
         {
@@ -29,17 +31,21 @@ namespace Innovatron
 
         private void moveTimerEvent(object sender, EventArgs e)
         {
-            if (moveLeft && player.Left > 0)
+            if (moveLeft && player.Left > -2)
             {
                 player.Left -= speed;
+                if (player.Image != moveLeftPicture)
+                {
+                    player.Image = moveLeftPicture;
+                }
             }
-            if (moveRight && player.Left < 922)
+            if (moveRight && player.Left < 944)
             {
                 player.Left += speed;
-            }
-            if (key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt != "key")
-            {
-                showActions("key");
+                if (player.Image != moveRightPicture)
+                {
+                    player.Image = moveRightPicture;
+                }
             }
             if (!key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt == "key")
             {
@@ -72,6 +78,13 @@ namespace Innovatron
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 moveRight = true;
+            }
+            if (e.KeyCode == Keys.Space)
+            {
+                if (key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt != "key")
+                {
+                    showActions("key");
+                }
             }
         }
 

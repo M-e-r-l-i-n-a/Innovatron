@@ -31,13 +31,13 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             moveTimer = new System.Windows.Forms.Timer(components);
-            player = new PictureBox();
             key = new PictureBox();
             ActionsList = new ListBox();
             button1 = new Button();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)player).BeginInit();
+            player = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)key).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)player).BeginInit();
             SuspendLayout();
             // 
             // moveTimer
@@ -46,45 +46,34 @@
             moveTimer.Interval = 20;
             moveTimer.Tick += moveTimerEvent;
             // 
-            // player
-            // 
-            player.BackColor = Color.Transparent;
-            player.Image = (Image)resources.GetObject("player.Image");
-            player.Location = new Point(373, 241);
-            player.Margin = new Padding(2);
-            player.Name = "player";
-            player.Size = new Size(87, 86);
-            player.TabIndex = 0;
-            player.TabStop = false;
-            // 
             // key
             // 
             key.BackColor = Color.Transparent;
             key.Image = (Image)resources.GetObject("key.Image");
-            key.Location = new Point(276, 279);
+            key.Location = new Point(345, 349);
             key.Margin = new Padding(2);
             key.Name = "key";
-            key.Size = new Size(49, 28);
+            key.Size = new Size(40, 21);
             key.TabIndex = 1;
             key.TabStop = false;
             // 
             // ActionsList
             // 
             ActionsList.FormattingEnabled = true;
-            ActionsList.ItemHeight = 20;
-            ActionsList.Location = new Point(324, 10);
+            ActionsList.ItemHeight = 25;
+            ActionsList.Location = new Point(405, 12);
             ActionsList.Margin = new Padding(2);
             ActionsList.Name = "ActionsList";
-            ActionsList.Size = new Size(145, 104);
+            ActionsList.Size = new Size(180, 129);
             ActionsList.TabIndex = 2;
             ActionsList.KeyDown += KeyDownList;
             // 
             // button1
             // 
-            button1.Location = new Point(473, 10);
+            button1.Location = new Point(591, 12);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(90, 27);
+            button1.Size = new Size(112, 34);
             button1.TabIndex = 3;
             button1.Text = "select";
             button1.UseVisualStyleBackColor = true;
@@ -93,30 +82,43 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(204, 10);
+            label1.Location = new Point(255, 12);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(121, 20);
+            label1.Size = new Size(144, 25);
             label1.TabIndex = 4;
             label1.Text = " Select an action:";
             // 
+            // player
+            // 
+            player.BackColor = Color.Transparent;
+            player.Image = (Image)resources.GetObject("player.Image");
+            player.Location = new Point(502, 308);
+            player.Margin = new Padding(0);
+            player.Name = "player";
+            player.Size = new Size(57, 77);
+            player.SizeMode = PictureBoxSizeMode.Zoom;
+            player.TabIndex = 0;
+            player.TabStop = false;
+            // 
             // GameForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
+            Controls.Add(player);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(ActionsList);
             Controls.Add(key);
-            Controls.Add(player);
+            Margin = new Padding(4);
             Name = "GameForm";
             Text = "GameForm";
             FormClosed += GameForm_FormClosed;
             KeyDown += KeyIsDown;
             KeyUp += KeyIsUp;
-            ((System.ComponentModel.ISupportInitialize)player).EndInit();
             ((System.ComponentModel.ISupportInitialize)key).EndInit();
+            ((System.ComponentModel.ISupportInitialize)player).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,10 +126,10 @@
         #endregion
 
         private System.Windows.Forms.Timer moveTimer;
-        private PictureBox player;
         private PictureBox key;
         private ListBox ActionsList;
         private Button button1;
         private Label label1;
+        private PictureBox player;
     }
 }
