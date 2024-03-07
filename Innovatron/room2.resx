@@ -117,15 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Benutzen Sie die Pfeiltasten 'rechts' und 'links', um den Roboter zu bewegen.
-Um mit den verschiedenen Objekten zu interagieren, drücken Sie die Leertaste. 
-Dies funktioniert nur, wenn der Roboter das Objekt berührt. Klicken Sie nun 
-auf die gewünschte Interaktion mit dem Objekt (mit den Pfeiltasten oder mit 
-der Maus). Je nach Entscheidungen könnte es alternative Endungen geben, 
-also treffen Sie Ihre Entscheidungen bewusst. 
-
-Das Developer-Team, bestehend aus Andrea Niklaus und Elena Tafelski, wünscht 
-Ihnen eine schöne Game-Experience.</value>
-  </data>
 </root>
