@@ -8,6 +8,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Innovatron
 {
@@ -32,7 +33,7 @@ namespace Innovatron
 
         private void moveTimerEvent(object sender, EventArgs e)
         {
-            if (moveLeft && player.Left > -2)
+            if (moveLeft && player.Left > 0)
             {
                 player.Left -= speed;
                 if (player.Image != moveLeftPicture)
@@ -40,7 +41,7 @@ namespace Innovatron
                     player.Image = moveLeftPicture;
                 }
             }
-            if (moveRight && player.Left < 944)
+            if (moveRight && player.Left < 924)
             {
                 player.Left += speed;
                 if (player.Image != moveRightPicture)
@@ -75,6 +76,7 @@ namespace Innovatron
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
+            label2.Text = "";
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 moveLeft = true;
@@ -85,9 +87,13 @@ namespace Innovatron
             }
             if (e.KeyCode == Keys.Space)
             {
-                if (key.Bounds.IntersectsWith(player.Bounds) && interactionObjekt != key)
+                if (key.Bounds.IntersectsWith(player.Bounds))
                 {
                     showActions(key);
+                }
+                if (door1.Bounds.IntersectsWith(player.Bounds))
+                {
+                    showActions(door1);
                 }
             }
         }
@@ -111,7 +117,7 @@ namespace Innovatron
 
         private void KeyDownList(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
             {
                 SelectItemFromList();
             }
@@ -125,7 +131,9 @@ namespace Innovatron
             selectedAction = (string)ActionsList.SelectedItem;
 
             ActionObject(key, "take", "open");
-            //Door(door1, room2);
+            Form newForm = new room2();
+            Door(door1, newForm);
+            //InformationObject(name, "text");
         }
 
         private void ActionObject(PictureBox objekt, string requiredAction, string getAction)
@@ -138,11 +146,11 @@ namespace Innovatron
             this.Focus();
         }
 
-        private void InformationObject(PictureBox objekt)
+        private void InformationObject(PictureBox objekt, string text)
         {
             if (interactionObjekt == objekt && selectedAction == "read")
             {
-                
+                label2.Text = text;
             }
         }
 
@@ -154,6 +162,7 @@ namespace Innovatron
                 nextForm.Show();
             }
         }
+
         private void helpbutton_Click(object sender, EventArgs e)
         {
             GetHelpForm getHelpForm = new GetHelpForm();
