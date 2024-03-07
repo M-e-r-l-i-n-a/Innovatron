@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Elena_c7pcoaq\\.nuget\\packages\\": {}
+    "C:\\Users\\andre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\Innovatron\\Innovatron\\Innovatron.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\OneDrive - BBBaden\\Dokumente\\GitHub\\Innovatron\\Innovatron\\Innovatron.csproj",
       "projectName": "Innovatron",
-      "projectPath": "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\Innovatron\\Innovatron\\Innovatron.csproj",
-      "packagesPath": "C:\\Users\\Elena_c7pcoaq\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\Innovatron\\Innovatron\\obj\\",
+      "projectPath": "C:\\Users\\andre\\OneDrive - BBBaden\\Dokumente\\GitHub\\Innovatron\\Innovatron\\Innovatron.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andre\\OneDrive - BBBaden\\Dokumente\\GitHub\\Innovatron\\Innovatron\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Elena_c7pcoaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,9 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {},
+        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -64,7 +66,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

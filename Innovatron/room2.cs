@@ -16,5 +16,11 @@ namespace Innovatron
         {
             InitializeComponent();
         }
+
+        private void room2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+        }
     }
 }
