@@ -20,8 +20,8 @@ namespace Innovatron
         private void newGameBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GameForm gameForm = new GameForm();
-            gameForm.Show();
+            room1 room1 = new room1();
+            room1.Show();
         }
 
         private void onFormClosed(object sender, FormClosedEventArgs e)

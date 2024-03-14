@@ -19,8 +19,8 @@ namespace Innovatron
 
         private void GetHelpForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            GameForm gameForm = new GameForm();
-            gameForm.Show();
+            room1 room1 = new room1();
+            room1.Show();
         }
 
         private void CloseHelpFormBtn_Click(object sender, EventArgs e)

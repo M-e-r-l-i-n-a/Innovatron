@@ -12,7 +12,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Innovatron
 {
-    public partial class GameForm : Form
+    public partial class room1 : Form
     {
         bool moveLeft, moveRight;
         int speed = 12;
@@ -21,7 +21,7 @@ namespace Innovatron
         Bitmap moveRightPicture = new("..\\..\\..\\pictures\\moveRight.png");
         string selectedAction;
 
-        public GameForm()
+        public room1()
         {
             InitializeComponent();
             ActionsList.Items.Add("cancel");
