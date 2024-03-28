@@ -38,10 +38,10 @@
             newGameBtn.BackColor = Color.Transparent;
             newGameBtn.Font = new Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point);
             newGameBtn.ForeColor = SystemColors.ActiveCaptionText;
-            newGameBtn.Location = new Point(410, 238);
-            newGameBtn.Margin = new Padding(4, 4, 4, 4);
+            newGameBtn.Location = new Point(369, 219);
+            newGameBtn.Margin = new Padding(4);
             newGameBtn.Name = "newGameBtn";
-            newGameBtn.Size = new Size(174, 80);
+            newGameBtn.Size = new Size(157, 74);
             newGameBtn.TabIndex = 0;
             newGameBtn.Text = "Start new \r\nGame";
             newGameBtn.UseVisualStyleBackColor = false;
@@ -52,10 +52,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Rockwell", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Maroon;
-            label1.Location = new Point(351, 34);
+            label1.Location = new Point(316, 31);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(302, 56);
+            label1.Size = new Size(247, 46);
             label1.TabIndex = 1;
             label1.Text = "Welcome to:";
             // 
@@ -64,22 +64,22 @@
             label2.AutoSize = true;
             label2.Font = new Font("Snap ITC", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Maroon;
-            label2.Location = new Point(251, 91);
+            label2.Location = new Point(226, 84);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(503, 74);
+            label2.Size = new Size(413, 61);
             label2.TabIndex = 2;
             label2.Text = "INNOVATRON";
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(900, 517);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(newGameBtn);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "MainForm";
             Text = "MainForm";
             FormClosed += onFormClosed;

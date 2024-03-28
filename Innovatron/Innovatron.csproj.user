@@ -4,6 +4,9 @@
     <Compile Update="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GetHelpForm.cs">
       <SubType>Form</SubType>
     </Compile>
