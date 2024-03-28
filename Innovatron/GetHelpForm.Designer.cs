@@ -74,7 +74,6 @@
             Controls.Add(label1);
             Name = "GetHelpForm";
             Text = "GetHelpForm";
-            FormClosed += GetHelpForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

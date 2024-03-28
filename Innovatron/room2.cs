@@ -1,39 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Innovatron
 {
-    public partial class room2 : Form
+    internal class room2 : BaseForm
     {
-        bool moveLeft, moveRight;
-        int speed = 12;
-        PictureBox interactionObjekt;
-        Bitmap moveLeftPicture = new("..\\..\\..\\pictures\\moveLeft.png");
-        Bitmap moveRightPicture = new("..\\..\\..\\pictures\\moveRight.png");
-        string selectedAction;
-
-        public room2()
+        public override PictureBox[] InteractionObjects()
         {
-            InitializeComponent();
+            PictureBox[] interactionObjects = { cupboard, glasses };
+            return interactionObjects;
         }
 
-        private void room2_FormClosed(object sender, FormClosedEventArgs e)
+        public override void DefineActions()
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-        }
-
-        private void player_Click(object sender, EventArgs e)
-        {
-
+            ActionObject(cupboard, "take", "read");
+            //Door(door1, new room2());
+            //InformationObject(name, "text");
         }
     }
 }
