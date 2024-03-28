@@ -18,8 +18,8 @@ namespace Innovatron
         int speed = 12;
         Bitmap moveLeftPicture = new("..\\..\\..\\pictures\\moveLeft.png");
         Bitmap moveRightPicture = new("..\\..\\..\\pictures\\moveRight.png");
-        PictureBox[] interactionObjects;
-        PictureBox interactionObjekt;
+        List<PictureBox> interactionObjects;
+        public PictureBox interactionObjekt;
         Control[] actionListElements;
         string selectedAction;
 
@@ -27,7 +27,7 @@ namespace Innovatron
         {
             InitializeComponent();
 
-            PictureBox[] allInteractionObjects = { key, door1, door2, door3, cupboard, glasses, paper };
+            PictureBox[] allInteractionObjects = { key, door1, door2, door3, cupboard, glasses, paper, schloss, wireCutter };
 
             actionListElements = new Control[]{ labelAction, selectAction, ActionsList };
 
@@ -46,11 +46,6 @@ namespace Innovatron
             foreach (PictureBox interactionObject in interactionObjects)
             {
                 interactionObject.Visible = true;
-            }
-
-            foreach (string action in Program.Actions)
-            {
-                ActionsList.Items.Add(action);
             }
         }
 
@@ -91,6 +86,13 @@ namespace Innovatron
             {
                 actionObject.Visible = true;
             }
+
+            ActionsList.Items.Clear();
+
+            foreach (string action in Program.Actions)
+            {
+                ActionsList.Items.Add(action);
+            }
         }
 
         private void GameForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -122,9 +124,9 @@ namespace Innovatron
             }
         }
 
-        public virtual PictureBox[] InteractionObjects()
+        public virtual List<PictureBox> InteractionObjects()
         {
-            PictureBox[] interactionObjects = { };
+            List<PictureBox> interactionObjects = new();
             return interactionObjects;
         }
 
@@ -174,8 +176,7 @@ namespace Innovatron
             if (interactionObjekt == objekt && selectedAction == requiredAction)
             {
                 Program.Actions.Add(getAction);
-                ActionsList.Items.Add(getAction);
-                key.Left = -100;
+                objekt.Left = -100;
             }
             this.Focus();
         }
@@ -194,6 +195,25 @@ namespace Innovatron
             {
                 this.Hide();
                 nextForm.Show();
+            }
+        }
+
+        public void RevealObject(PictureBox objekt, string requiredAction, PictureBox activateObject, string changePicture)
+        {
+            if (interactionObjekt == objekt && selectedAction == requiredAction)
+            {
+                interactionObjects.Add(activateObject);
+                interactionObjects.Remove(objekt);
+                activateObject.Visible = true;
+
+                if (changePicture != "")
+                {
+                    Bitmap picture = new(changePicture);
+                    objekt.Image = picture;
+                } else
+                {
+                    objekt.Left = -200;
+                }
             }
         }
 

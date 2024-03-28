@@ -16,5 +16,8 @@
     <Compile Update="room2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="room3.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

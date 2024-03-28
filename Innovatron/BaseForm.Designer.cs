@@ -44,6 +44,8 @@
             cupboard = new PictureBox();
             glasses = new PictureBox();
             paper = new PictureBox();
+            schloss = new PictureBox();
+            wireCutter = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)player).BeginInit();
             ((System.ComponentModel.ISupportInitialize)helpbutton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)door1).BeginInit();
@@ -53,6 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)cupboard).BeginInit();
             ((System.ComponentModel.ISupportInitialize)glasses).BeginInit();
             ((System.ComponentModel.ISupportInitialize)paper).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)schloss).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)wireCutter).BeginInit();
             SuspendLayout();
             // 
             // moveTimer
@@ -72,23 +76,23 @@
             ActionsList.TabIndex = 2;
             ActionsList.KeyDown += KeyDownList;
             // 
-            // button1
+            // selectAction
             // 
             selectAction.Location = new Point(591, 12);
             selectAction.Margin = new Padding(2);
-            selectAction.Name = "button1";
+            selectAction.Name = "selectAction";
             selectAction.Size = new Size(112, 34);
             selectAction.TabIndex = 3;
             selectAction.Text = "select";
             selectAction.UseVisualStyleBackColor = true;
             selectAction.Click += button1_Click;
             // 
-            // label1
+            // labelAction
             // 
             labelAction.AutoSize = true;
             labelAction.Location = new Point(256, 12);
             labelAction.Margin = new Padding(2, 0, 2, 0);
-            labelAction.Name = "label1";
+            labelAction.Name = "labelAction";
             labelAction.Size = new Size(144, 25);
             labelAction.TabIndex = 4;
             labelAction.Text = " Select an action:";
@@ -117,11 +121,11 @@
             helpbutton.TabStop = false;
             helpbutton.Click += helpbutton_Click;
             // 
-            // label2
+            // text
             // 
             text.AutoSize = true;
             text.Location = new Point(456, 257);
-            text.Name = "label2";
+            text.Name = "text";
             text.Size = new Size(0, 25);
             text.TabIndex = 6;
             // 
@@ -129,7 +133,7 @@
             // 
             door1.BackColor = Color.Transparent;
             door1.Image = (Image)resources.GetObject("door1.Image");
-            door1.Location = new Point(832, 257);
+            door1.Location = new Point(13, 257);
             door1.Name = "door1";
             door1.Size = new Size(156, 215);
             door1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -140,7 +144,7 @@
             // 
             key.BackColor = Color.Transparent;
             key.Image = (Image)resources.GetObject("key.Image");
-            key.Location = new Point(144, 415);
+            key.Location = new Point(256, 403);
             key.Margin = new Padding(2);
             key.Name = "key";
             key.Size = new Size(64, 29);
@@ -163,7 +167,7 @@
             // 
             door3.BackColor = Color.Transparent;
             door3.Image = (Image)resources.GetObject("door3.Image");
-            door3.Location = new Point(13, 257);
+            door3.Location = new Point(832, 257);
             door3.Name = "door3";
             door3.Size = new Size(156, 215);
             door3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -174,9 +178,9 @@
             // 
             cupboard.BackColor = Color.Transparent;
             cupboard.Image = (Image)resources.GetObject("cupboard.Image");
-            cupboard.Location = new Point(353, 193);
+            cupboard.Location = new Point(381, 193);
             cupboard.Name = "cupboard";
-            cupboard.Size = new Size(282, 279);
+            cupboard.Size = new Size(241, 279);
             cupboard.SizeMode = PictureBoxSizeMode.Zoom;
             cupboard.TabIndex = 10;
             cupboard.TabStop = false;
@@ -185,41 +189,59 @@
             // 
             glasses.BackColor = Color.Transparent;
             glasses.Image = (Image)resources.GetObject("glasses.Image");
-            glasses.Location = new Point(443, 351);
+            glasses.Location = new Point(749, 381);
             glasses.Name = "glasses";
             glasses.Size = new Size(88, 81);
             glasses.SizeMode = PictureBoxSizeMode.Zoom;
             glasses.TabIndex = 11;
             glasses.TabStop = false;
             // 
-            // pictureBox1
+            // paper
             // 
             paper.BackColor = Color.Transparent;
-            paper.Image = (Image)resources.GetObject("pictureBox1.Image");
+            paper.Image = (Image)resources.GetObject("paper.Image");
             paper.Location = new Point(659, 372);
-            paper.Name = "pictureBox1";
+            paper.Name = "paper";
             paper.Size = new Size(131, 100);
             paper.SizeMode = PictureBoxSizeMode.Zoom;
             paper.TabIndex = 12;
             paper.TabStop = false;
+            // 
+            // schloss
+            // 
+            schloss.Location = new Point(12, 381);
+            schloss.Name = "schloss";
+            schloss.Size = new Size(150, 75);
+            schloss.TabIndex = 13;
+            schloss.TabStop = false;
+            // 
+            // wireCutter
+            // 
+            wireCutter.Location = new Point(417, 387);
+            wireCutter.Name = "wireCutter";
+            wireCutter.Size = new Size(150, 75);
+            wireCutter.TabIndex = 14;
+            wireCutter.TabStop = false;
             // 
             // BaseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1000, 562);
-            Controls.Add(paper);
             Controls.Add(player);
-            Controls.Add(door1);
+            Controls.Add(schloss);
+            Controls.Add(paper);
             Controls.Add(text);
             Controls.Add(helpbutton);
             Controls.Add(key);
             Controls.Add(labelAction);
             Controls.Add(selectAction);
             Controls.Add(ActionsList);
-            Controls.Add(door2);
-            Controls.Add(door3);
             Controls.Add(glasses);
+            Controls.Add(door1);
+            Controls.Add(door3);
+            Controls.Add(wireCutter);
+            Controls.Add(door2);
             Controls.Add(cupboard);
             Margin = new Padding(4);
             Name = "BaseForm";
@@ -236,6 +258,8 @@
             ((System.ComponentModel.ISupportInitialize)cupboard).EndInit();
             ((System.ComponentModel.ISupportInitialize)glasses).EndInit();
             ((System.ComponentModel.ISupportInitialize)paper).EndInit();
+            ((System.ComponentModel.ISupportInitialize)schloss).EndInit();
+            ((System.ComponentModel.ISupportInitialize)wireCutter).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -257,5 +281,7 @@
         public PictureBox cupboard;
         public PictureBox glasses;
         public PictureBox paper;
+        public PictureBox schloss;
+        public PictureBox wireCutter;
     }
 }
