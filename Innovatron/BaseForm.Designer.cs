@@ -46,6 +46,8 @@
             paper = new PictureBox();
             schloss = new PictureBox();
             wireCutter = new PictureBox();
+            box = new PictureBox();
+            table = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)player).BeginInit();
             ((System.ComponentModel.ISupportInitialize)helpbutton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)door1).BeginInit();
@@ -57,6 +59,8 @@
             ((System.ComponentModel.ISupportInitialize)paper).BeginInit();
             ((System.ComponentModel.ISupportInitialize)schloss).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wireCutter).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)box).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)table).BeginInit();
             SuspendLayout();
             // 
             // moveTimer
@@ -101,7 +105,7 @@
             // 
             player.BackColor = Color.Transparent;
             player.Image = (Image)resources.GetObject("player.Image");
-            player.Location = new Point(443, 360);
+            player.Location = new Point(456, 350);
             player.Margin = new Padding(0);
             player.Name = "player";
             player.Size = new Size(77, 112);
@@ -124,10 +128,11 @@
             // text
             // 
             text.AutoSize = true;
-            text.Location = new Point(456, 257);
+            text.Location = new Point(101, 212);
             text.Name = "text";
             text.Size = new Size(0, 25);
             text.TabIndex = 6;
+            text.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // door1
             // 
@@ -178,7 +183,7 @@
             // 
             cupboard.BackColor = Color.Transparent;
             cupboard.Image = (Image)resources.GetObject("cupboard.Image");
-            cupboard.Location = new Point(381, 193);
+            cupboard.Location = new Point(378, 193);
             cupboard.Name = "cupboard";
             cupboard.Size = new Size(241, 279);
             cupboard.SizeMode = PictureBoxSizeMode.Zoom;
@@ -189,9 +194,9 @@
             // 
             glasses.BackColor = Color.Transparent;
             glasses.Image = (Image)resources.GetObject("glasses.Image");
-            glasses.Location = new Point(749, 381);
+            glasses.Location = new Point(688, 372);
             glasses.Name = "glasses";
-            glasses.Size = new Size(88, 81);
+            glasses.Size = new Size(77, 75);
             glasses.SizeMode = PictureBoxSizeMode.Zoom;
             glasses.TabIndex = 11;
             glasses.TabStop = false;
@@ -200,9 +205,9 @@
             // 
             paper.BackColor = Color.Transparent;
             paper.Image = (Image)resources.GetObject("paper.Image");
-            paper.Location = new Point(659, 372);
+            paper.Location = new Point(445, 324);
             paper.Name = "paper";
-            paper.Size = new Size(131, 100);
+            paper.Size = new Size(101, 82);
             paper.SizeMode = PictureBoxSizeMode.Zoom;
             paper.TabIndex = 12;
             paper.TabStop = false;
@@ -217,11 +222,33 @@
             // 
             // wireCutter
             // 
-            wireCutter.Location = new Point(417, 387);
+            wireCutter.Image = (Image)resources.GetObject("wireCutter.Image");
+            wireCutter.Location = new Point(456, 387);
             wireCutter.Name = "wireCutter";
-            wireCutter.Size = new Size(150, 75);
+            wireCutter.Size = new Size(81, 75);
+            wireCutter.SizeMode = PictureBoxSizeMode.Zoom;
             wireCutter.TabIndex = 14;
             wireCutter.TabStop = false;
+            // 
+            // box
+            // 
+            box.Image = (Image)resources.GetObject("box.Image");
+            box.Location = new Point(659, 372);
+            box.Name = "box";
+            box.Size = new Size(125, 90);
+            box.SizeMode = PictureBoxSizeMode.Zoom;
+            box.TabIndex = 15;
+            box.TabStop = false;
+            // 
+            // table
+            // 
+            table.Image = (Image)resources.GetObject("table.Image");
+            table.Location = new Point(394, 317);
+            table.Name = "table";
+            table.Size = new Size(216, 198);
+            table.SizeMode = PictureBoxSizeMode.Zoom;
+            table.TabIndex = 16;
+            table.TabStop = false;
             // 
             // BaseForm
             // 
@@ -229,8 +256,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1000, 562);
             Controls.Add(player);
-            Controls.Add(schloss);
             Controls.Add(paper);
+            Controls.Add(table);
+            Controls.Add(schloss);
             Controls.Add(text);
             Controls.Add(helpbutton);
             Controls.Add(key);
@@ -243,6 +271,7 @@
             Controls.Add(wireCutter);
             Controls.Add(door2);
             Controls.Add(cupboard);
+            Controls.Add(box);
             Margin = new Padding(4);
             Name = "BaseForm";
             Text = "Innovatron";
@@ -260,6 +289,8 @@
             ((System.ComponentModel.ISupportInitialize)paper).EndInit();
             ((System.ComponentModel.ISupportInitialize)schloss).EndInit();
             ((System.ComponentModel.ISupportInitialize)wireCutter).EndInit();
+            ((System.ComponentModel.ISupportInitialize)box).EndInit();
+            ((System.ComponentModel.ISupportInitialize)table).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -283,5 +314,7 @@
         public PictureBox paper;
         public PictureBox schloss;
         public PictureBox wireCutter;
+        public PictureBox box;
+        public PictureBox table;
     }
 }

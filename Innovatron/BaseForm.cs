@@ -27,11 +27,9 @@ namespace Innovatron
         {
             InitializeComponent();
 
-            PictureBox[] allInteractionObjects = { key, door1, door2, door3, cupboard, glasses, paper, schloss, wireCutter };
+            PictureBox[] allInteractionObjects = { key, door1, door2, door3, cupboard, glasses, paper, schloss, wireCutter, box, table };
 
             actionListElements = new Control[]{ labelAction, selectAction, ActionsList };
-
-            interactionObjects = InteractionObjects();
 
             foreach (PictureBox interactionObject in allInteractionObjects)
             {
@@ -42,6 +40,8 @@ namespace Innovatron
             {
                 actionObject.Visible = false;
             }
+
+            interactionObjects = InteractionObjects();
 
             foreach (PictureBox interactionObject in interactionObjects)
             {
@@ -164,6 +164,7 @@ namespace Innovatron
 
             selectedAction = (string)ActionsList.SelectedItem;
             DefineActions();
+            this.Focus();
         }
 
         public virtual void DefineActions()
@@ -178,7 +179,6 @@ namespace Innovatron
                 Program.Actions.Add(getAction);
                 objekt.Left = -100;
             }
-            this.Focus();
         }
 
         public void InformationObject(PictureBox objekt, string text)

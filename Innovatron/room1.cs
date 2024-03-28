@@ -12,7 +12,7 @@ namespace Innovatron
     {
         public override List<PictureBox> InteractionObjects()
         {
-            List<PictureBox> interactionObjects = new() { key, door3, door1, schloss };
+            List<PictureBox> interactionObjects = new() { key, door3, schloss };
             door1.Visible = true;
             return interactionObjects;
         }
@@ -22,7 +22,6 @@ namespace Innovatron
             ActionObject(key, "take", "open");
             Door(door3, Program.room2);
             Door(door1, Program.room3);
-            //InformationObject(name, "text");
             RevealObject(schloss, "wire cutter", door1, "");
         }
     }

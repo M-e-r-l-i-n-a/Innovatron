@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace Innovatron
 {
-    public partial class room3 : BaseForm
+    public partial class room4 : BaseForm
     {
         public override List<PictureBox> InteractionObjects()
         {
-            List<PictureBox> interactionObjects = new() { door1, glasses, door3};
-            box.Visible = true;
+            List<PictureBox> interactionObjects = new() { door1, paper, door3 };
+            table.Visible = true;
             return interactionObjects;
         }
 
         public override void DefineActions()
         {
-            ActionObject(glasses, "take", "read");
-            Door(door1, Program.room1);
-            Door(door3, Program.room4);
+            //Door(door1, Program.room1);
+            //Door(door3, Program.room1);
+            InformationObject(paper, "Wer ist für den 3. Weltkrieg verantwortlich? Für Putin nehme die linke Tür und für Trump die rechte.");
         }
     }
 }
