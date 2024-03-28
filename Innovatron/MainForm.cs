@@ -21,6 +21,8 @@ namespace Innovatron
         {
             this.Hide();
             Program.room1.Show();
+            GameOver gameOver = new GameOver();
+            gameOver.Show();
         }
 
         private void onFormClosed(object sender, FormClosedEventArgs e)

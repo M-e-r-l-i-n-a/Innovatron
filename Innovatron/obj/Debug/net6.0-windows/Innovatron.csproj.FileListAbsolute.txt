@@ -3,7 +3,6 @@ C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\bin\Deb
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.runtimeconfig.json
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.dll
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\bin\Debug\net6.0-windows\Innovatron.pdb
-C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.GameForm.resources
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.MainForm.resources
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.csproj.GenerateResource.cache
 C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.GeneratedMSBuildEditorConfig.editorconfig
@@ -42,3 +41,7 @@ C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room1.resources
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room2.resources
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room3.resources
+C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.BaseForm.resources
+C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.GameOver.resources
+C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room1.resources
+C:\Users\andre\OneDrive - BBBaden\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room3.resources
