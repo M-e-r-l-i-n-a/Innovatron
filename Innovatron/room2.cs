@@ -19,7 +19,7 @@ namespace Innovatron
         {
             ActionObject(wireCutter, "take", "wire cutter");
             Door(door1, Program.room1);
-            RevealObject(cupboard, "open", wireCutter, "..\\..\\..\\pictures\\cabinet-open.png");
+            RevealObject(cupboard, "open", wireCutter, "..\\..\\..\\Resources\\cabinet-open.png");
         }
     }
 }

@@ -214,9 +214,11 @@
             // 
             // schloss
             // 
-            schloss.Location = new Point(12, 381);
+            schloss.Image = (Image)resources.GetObject("schloss.Image");
+            schloss.Location = new Point(12, 403);
             schloss.Name = "schloss";
-            schloss.Size = new Size(150, 75);
+            schloss.Size = new Size(157, 15);
+            schloss.SizeMode = PictureBoxSizeMode.Zoom;
             schloss.TabIndex = 13;
             schloss.TabStop = false;
             // 

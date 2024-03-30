@@ -16,8 +16,8 @@ namespace Innovatron
     {
         bool moveLeft, moveRight;
         int speed = 12;
-        Bitmap moveLeftPicture = new("..\\..\\..\\pictures\\moveLeft.png");
-        Bitmap moveRightPicture = new("..\\..\\..\\pictures\\moveRight.png");
+        Bitmap moveLeftPicture = new("..\\..\\..\\Resources\\moveLeft.png");
+        Bitmap moveRightPicture = new("..\\..\\..\\Resources\\moveRight.png");
         List<PictureBox> interactionObjects;
         public PictureBox interactionObjekt;
         Control[] actionListElements;

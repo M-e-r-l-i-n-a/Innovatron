@@ -21,8 +21,8 @@ namespace Innovatron
 
         public override void DefineActions()
         {
-            //Door(door1, Program.room1);
-            //Door(door3, Program.room1);
+            Door(door1, new GameOver());
+            //Door(door3, Aussenwelt);
             InformationObject(paper, "Wer ist für den 3. Weltkrieg verantwortlich? Für Putin nehme die linke Tür und für Trump die rechte.");
         }
     }
