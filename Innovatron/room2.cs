@@ -12,6 +12,7 @@ namespace Innovatron
         public override List<PictureBox> InteractionObjects()
         {
             List<PictureBox> interactionObjects = new() { door1, cupboard };
+            trumpPicture.Visible = true;
             return interactionObjects;
         }
 

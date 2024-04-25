@@ -27,11 +27,11 @@ namespace Innovatron
         {
             InitializeComponent();
 
-            PictureBox[] allInteractionObjects = { key, door1, door2, door3, cupboard, glasses, paper, schloss, wireCutter, box, table };
+            PictureBox[] hiddenElements = { key, door1, door2, door3, cupboard, glasses, paper, schloss, wireCutter, box, table, trumpPicture, city, paper2, newWorld, gloves };
 
             actionListElements = new Control[]{ labelAction, selectAction, ActionsList };
 
-            foreach (PictureBox interactionObject in allInteractionObjects)
+            foreach (PictureBox interactionObject in hiddenElements)
             {
                 interactionObject.Visible = false;
             }
@@ -192,6 +192,15 @@ namespace Innovatron
         public void Door(PictureBox objekt, Form nextForm)
         {
             if (interactionObjekt == objekt && selectedAction == "open")
+            {
+                this.Hide();
+                nextForm.Show();
+            }
+        }
+
+        public void Door(PictureBox objekt, Form nextForm, string requiredAction)
+        {
+            if (interactionObjekt == objekt && selectedAction == requiredAction)
             {
                 this.Hide();
                 nextForm.Show();

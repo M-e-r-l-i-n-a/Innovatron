@@ -43,3 +43,6 @@ C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room3.resources
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.room4.resources
 C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.GameOver.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.outside1.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.HappyEnd.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\Innovatron\Innovatron\obj\Debug\net6.0-windows\Innovatron.outside2.resources

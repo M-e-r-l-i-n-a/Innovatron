@@ -10,6 +10,11 @@ namespace Innovatron
 {
     internal class room1 : BaseForm
     {
+        public room1()
+        {
+            player.Location = new Point(456, 350);
+        }
+
         public override List<PictureBox> InteractionObjects()
         {
             List<PictureBox> interactionObjects = new() { key, door3, schloss };

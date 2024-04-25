@@ -48,6 +48,11 @@
             wireCutter = new PictureBox();
             box = new PictureBox();
             table = new PictureBox();
+            city = new PictureBox();
+            trumpPicture = new PictureBox();
+            paper2 = new PictureBox();
+            newWorld = new PictureBox();
+            gloves = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)player).BeginInit();
             ((System.ComponentModel.ISupportInitialize)helpbutton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)door1).BeginInit();
@@ -61,6 +66,11 @@
             ((System.ComponentModel.ISupportInitialize)wireCutter).BeginInit();
             ((System.ComponentModel.ISupportInitialize)box).BeginInit();
             ((System.ComponentModel.ISupportInitialize)table).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)city).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)trumpPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)paper2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)newWorld).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gloves).BeginInit();
             SuspendLayout();
             // 
             // moveTimer
@@ -105,7 +115,7 @@
             // 
             player.BackColor = Color.Transparent;
             player.Image = (Image)resources.GetObject("player.Image");
-            player.Location = new Point(456, 350);
+            player.Location = new Point(52, 350);
             player.Margin = new Padding(0);
             player.Name = "player";
             player.Size = new Size(77, 112);
@@ -194,7 +204,7 @@
             // 
             glasses.BackColor = Color.Transparent;
             glasses.Image = (Image)resources.GetObject("glasses.Image");
-            glasses.Location = new Point(688, 372);
+            glasses.Location = new Point(469, 372);
             glasses.Name = "glasses";
             glasses.Size = new Size(77, 75);
             glasses.SizeMode = PictureBoxSizeMode.Zoom;
@@ -205,9 +215,9 @@
             // 
             paper.BackColor = Color.Transparent;
             paper.Image = (Image)resources.GetObject("paper.Image");
-            paper.Location = new Point(445, 324);
+            paper.Location = new Point(450, 317);
             paper.Name = "paper";
-            paper.Size = new Size(101, 82);
+            paper.Size = new Size(101, 74);
             paper.SizeMode = PictureBoxSizeMode.Zoom;
             paper.TabIndex = 12;
             paper.TabStop = false;
@@ -235,7 +245,7 @@
             // box
             // 
             box.Image = (Image)resources.GetObject("box.Image");
-            box.Location = new Point(659, 372);
+            box.Location = new Point(440, 372);
             box.Name = "box";
             box.Size = new Size(125, 90);
             box.SizeMode = PictureBoxSizeMode.Zoom;
@@ -252,16 +262,71 @@
             table.TabIndex = 16;
             table.TabStop = false;
             // 
+            // city
+            // 
+            city.Image = (Image)resources.GetObject("city.Image");
+            city.Location = new Point(-10, -95);
+            city.Name = "city";
+            city.Size = new Size(1024, 1024);
+            city.SizeMode = PictureBoxSizeMode.AutoSize;
+            city.TabIndex = 17;
+            city.TabStop = false;
+            // 
+            // trumpPicture
+            // 
+            trumpPicture.Image = (Image)resources.GetObject("trumpPicture.Image");
+            trumpPicture.Location = new Point(774, 103);
+            trumpPicture.Name = "trumpPicture";
+            trumpPicture.Size = new Size(125, 134);
+            trumpPicture.SizeMode = PictureBoxSizeMode.Zoom;
+            trumpPicture.TabIndex = 18;
+            trumpPicture.TabStop = false;
+            // 
+            // paper2
+            // 
+            paper2.BackColor = Color.Transparent;
+            paper2.Image = (Image)resources.GetObject("paper2.Image");
+            paper2.Location = new Point(271, 317);
+            paper2.Name = "paper2";
+            paper2.Size = new Size(101, 74);
+            paper2.SizeMode = PictureBoxSizeMode.Zoom;
+            paper2.TabIndex = 19;
+            paper2.TabStop = false;
+            // 
+            // newWorld
+            // 
+            newWorld.Image = (Image)resources.GetObject("newWorld.Image");
+            newWorld.Location = new Point(457, 372);
+            newWorld.Name = "newWorld";
+            newWorld.Size = new Size(76, 75);
+            newWorld.SizeMode = PictureBoxSizeMode.Zoom;
+            newWorld.TabIndex = 20;
+            newWorld.TabStop = false;
+            // 
+            // gloves
+            // 
+            gloves.Image = (Image)resources.GetObject("gloves.Image");
+            gloves.Location = new Point(761, 372);
+            gloves.Name = "gloves";
+            gloves.Size = new Size(76, 75);
+            gloves.SizeMode = PictureBoxSizeMode.Zoom;
+            gloves.TabIndex = 21;
+            gloves.TabStop = false;
+            // 
             // BaseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1000, 562);
             Controls.Add(player);
+            Controls.Add(gloves);
+            Controls.Add(newWorld);
+            Controls.Add(text);
+            Controls.Add(paper2);
+            Controls.Add(trumpPicture);
             Controls.Add(paper);
             Controls.Add(table);
             Controls.Add(schloss);
-            Controls.Add(text);
             Controls.Add(helpbutton);
             Controls.Add(key);
             Controls.Add(labelAction);
@@ -274,6 +339,7 @@
             Controls.Add(door2);
             Controls.Add(cupboard);
             Controls.Add(box);
+            Controls.Add(city);
             Margin = new Padding(4);
             Name = "BaseForm";
             Text = "Innovatron";
@@ -293,6 +359,11 @@
             ((System.ComponentModel.ISupportInitialize)wireCutter).EndInit();
             ((System.ComponentModel.ISupportInitialize)box).EndInit();
             ((System.ComponentModel.ISupportInitialize)table).EndInit();
+            ((System.ComponentModel.ISupportInitialize)city).EndInit();
+            ((System.ComponentModel.ISupportInitialize)trumpPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)paper2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)newWorld).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gloves).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -318,5 +389,10 @@
         public PictureBox wireCutter;
         public PictureBox box;
         public PictureBox table;
+        public PictureBox city;
+        public PictureBox trumpPicture;
+        public PictureBox paper2;
+        public PictureBox newWorld;
+        public PictureBox gloves;
     }
 }

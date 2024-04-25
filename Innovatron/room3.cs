@@ -12,6 +12,11 @@ namespace Innovatron
 {
     public partial class room3 : BaseForm
     {
+        public room3()
+        {
+            player.Location = new Point(872, 350);
+        }
+
         public override List<PictureBox> InteractionObjects()
         {
             List<PictureBox> interactionObjects = new() { door1, glasses, door3};
@@ -22,8 +27,8 @@ namespace Innovatron
         public override void DefineActions()
         {
             ActionObject(glasses, "take", "read");
-            Door(door1, Program.room1);
-            Door(door3, Program.room4);
+            Door(door3, Program.room1);
+            Door(door1, Program.room4);
         }
     }
 }

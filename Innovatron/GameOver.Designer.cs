@@ -50,7 +50,8 @@
             pictureBox2.Image = Properties.Resources.GameOver;
             pictureBox2.Location = new Point(0, -2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(854, 492);
+            pictureBox2.Size = new Size(768, 462);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
