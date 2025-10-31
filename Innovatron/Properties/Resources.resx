@@ -121,25 +121,28 @@
   <data name="GameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GameOver.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text-1711618769942" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\text-1711618769942.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="842ad68b315b0f586c30b465221da609" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\842ad68b315b0f586c30b465221da609.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cupboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cupboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cabinet-closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cabinet-closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text-17116187699421" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\text-17116187699421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="moveLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moveLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="moveRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moveRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-1711618769942" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text-1711618769942.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-17116187699421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text-17116187699421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="842ad68b315b0f586c30b465221da609" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\842ad68b315b0f586c30b465221da609.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cabinet-open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cabinet-open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

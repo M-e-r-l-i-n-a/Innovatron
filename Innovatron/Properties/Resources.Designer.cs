@@ -83,6 +83,16 @@ namespace Innovatron.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cabinet_open {
+            get {
+                object obj = ResourceManager.GetObject("cabinet-open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cupboard {
             get {
                 object obj = ResourceManager.GetObject("cupboard", resourceCulture);

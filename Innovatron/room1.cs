@@ -27,7 +27,7 @@ namespace Innovatron
             ActionObject(key, "take", "open");
             Door(door3, Program.room2);
             Door(door1, Program.room3);
-            RevealObject(schloss, "wire cutter", door1, "");
+            RevealObject(schloss, "wire cutter", door1, null);
         }
     }
 }

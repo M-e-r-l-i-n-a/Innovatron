@@ -205,7 +205,7 @@ namespace Innovatron
             }
         }
 
-        public void RevealObject(PictureBox objekt, string requiredAction, PictureBox activateObject, string changePicture)
+        public void RevealObject(PictureBox objekt, string requiredAction, PictureBox activateObject, System.Drawing.Bitmap? changePicture)
         {
             if (interactionObjekt == objekt && selectedAction == requiredAction)
             {
@@ -213,10 +213,9 @@ namespace Innovatron
                 interactionObjects.Remove(objekt);
                 activateObject.Visible = true;
 
-                if (changePicture != "")
+                if (changePicture != null)
                 {
-                    Bitmap picture = new(changePicture);
-                    objekt.Image = picture;
+                    objekt.Image = changePicture;
                 } else
                 {
                     objekt.Left = -200;
