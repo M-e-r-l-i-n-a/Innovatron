@@ -16,8 +16,6 @@ namespace Innovatron
     {
         bool moveLeft, moveRight;
         int speed = 12;
-        Bitmap moveLeftPicture = new("..\\..\\..\\Resources\\moveLeft.png");
-        Bitmap moveRightPicture = new("..\\..\\..\\Resources\\moveRight.png");
         List<PictureBox> interactionObjects;
         public PictureBox interactionObjekt;
         Control[] actionListElements;
@@ -54,17 +52,17 @@ namespace Innovatron
             if (moveLeft && player.Left > 0)
             {
                 player.Left -= speed;
-                if (player.Image != moveLeftPicture)
+                if (player.Image != Properties.Resources.moveLeft)
                 {
-                    player.Image = moveLeftPicture;
+                    player.Image = Properties.Resources.moveLeft;
                 }
             }
             if (moveRight && player.Left < 924)
             {
                 player.Left += speed;
-                if (player.Image != moveRightPicture)
+                if (player.Image != Properties.Resources.moveRight)
                 {
-                    player.Image = moveRightPicture;
+                    player.Image = Properties.Resources.moveRight;
                 }
             }
             if (interactionObjekt != null)
