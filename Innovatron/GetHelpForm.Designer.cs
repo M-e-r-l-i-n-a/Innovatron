@@ -37,18 +37,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(347, 29);
+            label1.Location = new Point(312, 27);
             label1.Name = "label1";
-            label1.Size = new Size(197, 25);
+            label1.Size = new Size(186, 23);
             label1.TabIndex = 0;
             label1.Text = "TUTORIAL: How to play";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(115, 106);
+            label2.Location = new Point(104, 98);
             label2.Name = "label2";
-            label2.Size = new Size(646, 225);
+            label2.Size = new Size(623, 207);
             label2.TabIndex = 1;
             label2.Text = resources.GetString("label2.Text");
             // 
@@ -56,9 +56,9 @@
             // 
             CloseHelpFormBtn.BackColor = Color.Transparent;
             CloseHelpFormBtn.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            CloseHelpFormBtn.Location = new Point(376, 371);
+            CloseHelpFormBtn.Location = new Point(352, 341);
             CloseHelpFormBtn.Name = "CloseHelpFormBtn";
-            CloseHelpFormBtn.Size = new Size(104, 45);
+            CloseHelpFormBtn.Size = new Size(94, 41);
             CloseHelpFormBtn.TabIndex = 2;
             CloseHelpFormBtn.Text = "OK";
             CloseHelpFormBtn.UseVisualStyleBackColor = false;
@@ -66,15 +66,14 @@
             // 
             // GetHelpForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(889, 489);
+            ClientSize = new Size(800, 450);
             Controls.Add(CloseHelpFormBtn);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "GetHelpForm";
             Text = "GetHelpForm";
-            FormClosed += GetHelpForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

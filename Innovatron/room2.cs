@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,17 +7,20 @@ using System.Windows.Forms;
 
 namespace Innovatron
 {
-    public partial class room2 : Form
+    internal class room2 : BaseForm
     {
-        public room2()
+        public override List<PictureBox> InteractionObjects()
         {
-            InitializeComponent();
+            List<PictureBox> interactionObjects = new() { door1, cupboard };
+            trumpPicture.Visible = true;
+            return interactionObjects;
         }
 
-        private void room2_FormClosed(object sender, FormClosedEventArgs e)
+        public override void DefineActions()
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+            ActionObject(wireCutter, "take", "wire cutter");
+            Door(door1, Program.room1);
+            RevealObject(cupboard, "open", wireCutter, "..\\..\\..\\Resources\\cabinet-open.png");
         }
     }
 }
